@@ -20,10 +20,3 @@ Connect-AzureAD -TenantID dac510b8-85bc-43f6-85d4-dc29d0b1bdd7
 # SHAREPOINT
 $TenantID = 'dac510b8-85bc-43f6-85d4-dc29d0b1bdd7'
 Connect-SPOService -Url https://domain-admin.sharepoint.com -AuthenticationUrl https://login.microsoftonline.com/$TenantID/oauth2/authorize
-
-
-# PowerShell in VS Code
-# https://code.visualstudio.com/docs/languages/powershell#_installing-the-powershell-extension
-
-# Hide path in terminal
-function prompt( ) {">"}
