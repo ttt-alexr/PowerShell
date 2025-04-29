@@ -5,18 +5,18 @@
 Connect-ExchangeOnline -DelegatedOrganization domain.com
 
 # PURVIEW
-$TenantID = 'dac510b8-85bc-43f6-85d4-dc29d0b1bdd7'
+$TenantID = '00000000-0000-0000-0000-000000000000'
 Connect-IPPSSession -DelegatedOrganization domain.onmicrosoft.com -AzureADAuthorizationEndpointUri https://login.microsoftonline.com/$TenantID/oauth2/authorize 
 
 # TEAMS
-Connect-MicrosoftTeams -TenantID dac510b8-85bc-43f6-85d4-dc29d0b1bdd7
+Connect-MicrosoftTeams -TenantID 00000000-0000-0000-0000-000000000000
 
 # GRAPH
-Connect-MGGraph -TenantID dac510b8-85bc-43f6-85d4-dc29d0b1bdd7 
+Connect-MGGraph -TenantID 00000000-0000-0000-0000-000000000000
 
 # AZURE AD
-Connect-AzureAD -TenantID dac510b8-85bc-43f6-85d4-dc29d0b1bdd7
+Connect-AzureAD -TenantID 00000000-0000-0000-0000-000000000000
 
 # SHAREPOINT
-$TenantID = 'dac510b8-85bc-43f6-85d4-dc29d0b1bdd7'
+$TenantID = '00000000-0000-0000-0000-000000000000'
 Connect-SPOService -Url https://domain-admin.sharepoint.com -AuthenticationUrl https://login.microsoftonline.com/$TenantID/oauth2/authorize

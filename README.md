@@ -1,1 +1,2 @@
-Alex's Script Scratch
+View **gdap_powershell** for tips on how to connect to PowerShell modules with GDAP partner access
+View **bag-o-tricks** for a completely random grab-bag of tricks for useful things to do in PowerShell
