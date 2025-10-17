@@ -35,4 +35,5 @@ function prompt( ) {">"}
 
 # ----------------------------------------------------------------------------------------------------------------------
 # Check last Managed Folder Assistant status
-([xml]((Export-MailboxDiagnosticLogs -Identity USERNAME -ExtendedProperties).MailboxLog)).Properties.MailboxTable.Property | Where-Object {$_.Name -like "ELC*"}
+$user = "username@domain.com"
+([xml]((Export-MailboxDiagnosticLogs -Identity $user -ExtendedProperties).MailboxLog)).Properties.MailboxTable.Property | Where-Object {$_.Name -like "ELC*"}
