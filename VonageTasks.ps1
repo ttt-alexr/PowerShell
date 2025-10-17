@@ -106,6 +106,7 @@ $taskXmlTemplate = @"
       <Enabled>true</Enabled>
       <StateChange>##STATECHANGE##</StateChange>
       <UserId>##USER##</UserId>
+      <Delay>PT10S</Delay>
     </SessionStateChangeTrigger>
   </Triggers>
   <Principals>
