@@ -161,7 +161,7 @@ $taskXmlTemplate = @"
         $stopXml = $taskXmlTemplate -replace '##STATECHANGE##', 'SessionLock'
         $stopXml = $stopXml -replace '##USER##', $currentUser
         $stopXml = $stopXml -replace '##COMMAND##', 'taskkill.exe'
-        $stopXml = $stopXml -replace '##ARGUMENTS##', '/IM "Vonage Business.exe"'
+        $stopXml = $stopXml -replace '##ARGUMENTS##', '/F /IM "Vonage Business.exe"'
 
         $stopXml | Out-File -FilePath $tempXmlFile -Encoding "Unicode"
 
